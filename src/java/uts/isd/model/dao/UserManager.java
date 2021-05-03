@@ -11,9 +11,9 @@ import java.sql.*;
  *
  * @author pault
  */
-public class DBManager {
+public class UserManager {
     private Statement st;
-    public DBManager(Connection conn) throws SQLException {
+    public UserManager(Connection conn) throws SQLException {
         st = conn.createStatement();
     }
     

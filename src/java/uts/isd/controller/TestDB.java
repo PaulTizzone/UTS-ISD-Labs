@@ -10,7 +10,7 @@ import java.util.*;
 import java.util.logging.*;
 import uts.isd.model.User;
 import uts.isd.model.dao.DBConnector;
-import uts.isd.model.dao.DBManager;
+import uts.isd.model.dao.UserManager;
 
 /**
  *
@@ -22,7 +22,7 @@ public class TestDB {
         try {
             DBConnector connector = new DBConnector();
             Connection conn = connector.openConnection();
-            DBManager db = new DBManager(conn);
+            UserManager db = new UserManager(conn);
             
             /*
             // Add to Database
